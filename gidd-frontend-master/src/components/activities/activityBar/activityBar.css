@@ -1,0 +1,42 @@
+.activityBarFlex {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+
+.activityBarFlex > div {
+  margin-right: 20px;
+}
+
+.searchbar {
+  width: 100%;
+}
+
+.sortSelect {
+  width: 150px;
+}
+.filterMenuDiv {
+  display: block;
+}
+.activities-bar-container {
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.activities-bar-buttons {
+  width: clamp(200px, 300px, 400px);
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.activities-bar-buttons a {
+  text-decoration: none;
+}
+.activities-bar-search-sort {
+  width: clamp(300px, 800px, 800px);
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+}

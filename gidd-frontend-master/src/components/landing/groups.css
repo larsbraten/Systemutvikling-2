@@ -1,0 +1,23 @@
+.GroupCard {
+  margin: 0.5rem;
+  margin-left: 0;
+  display: flex;
+  margin-bottom: 1em;
+  align-items: center;
+  border-radius: 20px;
+  max-height: 600px;
+}
+
+.GroupCardDetails {
+  text-align: left;
+  margin: 1rem;
+  margin-right: auto;
+  display: flex;
+  height: clamp(1rem, 2rem, 4rem);
+  max-width: 25rem;
+  gap: 2rem;
+}
+
+.GroupAvatar {
+  background-color: #4edce1;
+}

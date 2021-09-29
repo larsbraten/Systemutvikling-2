@@ -1,0 +1,49 @@
+.activityPaginator {
+}
+.pagination-container {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.pagespagination {
+  display: inline;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.pagination-next,
+.pagination-previous {
+  width: 20px;
+  display: inline;
+  padding-top: 3px;
+  border-radius: 5px;
+
+  border: none;
+  outline: none;
+}
+
+.pagespagination:hover,
+.pagination-next:hover,
+.pagination-previous:hover {
+  background-color: rgba(25, 65, 144, 1);
+  color: white;
+  border: none;
+}
+
+.pagination-active {
+  border: none;
+  outline: none;
+}
+
+.pagination-active-page * {
+  background-color: rgba(25, 65, 144, 1);
+  color: white;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 20px;
+}

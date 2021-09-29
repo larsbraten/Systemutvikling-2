@@ -1,0 +1,103 @@
+.activityPopup {
+  position: fixed;
+  top: 45vh;
+  right: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1em;
+  border-radius: 10px;
+  height: clamp(1rem, 27rem, 27rem);
+  width: clamp(300px, 350px, 400px);
+}
+.RecommendedCardDetails {
+  text-align: left;
+  height: 4rem;
+  margin: 1em;
+  display: flex;
+  overflow: hidden;
+  gap: 2rem;
+}
+.RecommendedAvatar {
+  background-color: red;
+}
+.RecommendedHeartContainer {
+  margin-left: auto;
+}
+.RecommendedHeart {
+  width: 2rem;
+  margin-left: auto;
+}
+
+.additionalDetails {
+  margin-left: 2em;
+}
+
+.RecommendedCardDescription {
+  height: 7rem;
+  overflow: hidden;
+  margin: 1rem;
+  text-align: left;
+  display: flex;
+}
+
+.RecommendedCardButtons {
+  /*margin: 1rem;*/
+
+  display: flex;
+  justify-content: space-between;
+}
+.RecommendedCardButtonSignUp {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+.RecommendedCardButtonReadMore {
+  margin-left: auto;
+  margin-right: 3rem;
+}
+.closeButton {
+  margin-right: 2rem !important;
+  margin-top: 1rem !important;
+  margin-left: 220px !important;
+}
+.timeDateLocation {
+  margin-left: 150px !important;
+}
+@media only screen and (max-width: 1024px) {
+  .activityPopup {
+    position: fixed;
+    top: 50vh;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1em;
+    border-radius: 10px;
+    height: clamp(1rem, 27rem, 27rem);
+    width: clamp(300px, 350px, 400px);
+  }
+  .closeButton {
+    margin-right: 2rem !important;
+    margin-left: 220px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .activityPopup {
+    position: fixed;
+    top: 60vh;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1em;
+    border-radius: 10px;
+    height: clamp(1rem, 18rem, 27rem);
+    width: clamp(300px, 300px, 400px);
+  }
+  .closeButton {
+    margin: 0 !important;
+  }
+  .RecommendedHeartContainer {
+    display: none;
+  }
+  .activityPopup img {
+    display: none;
+  }
+  .RecommendedCardDescription {
+    display: none;
+  }
+}

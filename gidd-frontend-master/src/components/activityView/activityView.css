@@ -1,0 +1,30 @@
+.parent {
+}
+.listView {
+  flex-direction: row;
+  margin-right: 10px;
+}
+.mapView {
+  flex-direction: row;
+}
+.calendarView {
+  flex-direction: row;
+  margin-left: 10px;
+}
+.enrolledActivities {
+  flex-direction: row;
+  margin-left: 500px;
+  margin-right: 10px;
+}
+.myActivities {
+  flex-direction: row;
+  margin-left: 10px;
+}
+.myProfile {
+  flex-direction: row;
+  margin-left: 10px;
+}
+.logOut {
+  flex-direction: row;
+  margin-left: 10px;
+}

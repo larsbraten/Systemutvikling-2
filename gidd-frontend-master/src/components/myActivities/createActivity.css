@@ -1,0 +1,381 @@
+.create-activity-base {
+  display: grid;
+  background-image: url(../../assets/Abstract2.svg);
+  background-size: cover;
+
+  grid-template-areas: ". Main .";
+  grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+}
+
+.create-activity-grid {
+  margin-bottom: 4rem;
+  display: grid;
+  height: fit-content;
+  grid-area: Main;
+  grid-template-areas: "essentialsGrid ExtraGrid";
+  grid-template-rows: auto;
+  grid-template-columns: minmax(300px, 800px) minmax(300px, 400px);
+  background-color: white;
+  gap: 1rem;
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 15px 86px -24px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 10px 15px 86px -24px rgba(0, 0, 0, 0.7);
+  box-shadow: 10px 15px 86px -24px rgba(0, 0, 0, 0.7);
+}
+.essentials-grid {
+  justify-items: center;
+  width: minmax(300px, 800px);
+  display: grid;
+  grid-area: essentialsGrid;
+  grid-template-areas:
+    "title title"
+    "navn nivaa"
+    "beskrivelse nivaa"
+    "adresse nivaa"
+    "kart kart"
+    "opprett opprett";
+  grid-template-columns: 1fr 1fr;
+}
+.extra-grid {
+  background-image: url(../../assets/Abstract2.svg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-area: ExtraGrid;
+  justify-items: center;
+  grid-template-areas:
+    "Ekstra"
+    "Utstyr"
+    "Dato"
+    "Bilde"
+    "Tags"
+    "Deltakere";
+  grid-template-columns: 1fr;
+}
+.extra-grid h1 {
+  color: white;
+}
+.create-activity-title {
+  width: 100%;
+  text-align: center;
+  grid-area: title;
+}
+.create-activity-nivaa {
+  grid-area: nivaa;
+}
+.create-activity-nivaa h2 {
+  text-align: center;
+}
+.create-activity-nivaa-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  border: solid 2px #4f4f4f;
+}
+.create-activity-nivaa-container img {
+  width: 70px;
+  max-height: 80px;
+  margin: auto 0;
+}
+.create-activity-nivaa-container h2 {
+  font-weight: bolder;
+  margin: auto 0;
+  width: 50%;
+}
+
+.create-activity-nivaa-selected {
+  background-color: #4f4f4f;
+
+  width: 200px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.create-activity-nivaa-unselected {
+  background-color: white;
+  width: 200px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.create-activity-nivaa-unselected:hover {
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+}
+.create-activity-nivaa-selected:hover {
+  cursor: pointer;
+}
+.create-activity-nivaa-selected h2 {
+  color: white;
+}
+.create-activity-nivaa-unselected h2 {
+}
+
+.create-activity-nivaa-img-right {
+  margin-left: auto;
+}
+.create-activity-nivaa-img-left {
+  margin-right: auto;
+}
+
+.create-activity-navn {
+  width: 80%;
+
+  grid-area: navn;
+}
+.create-activity-beskrivelse {
+  width: 80%;
+
+  grid-area: beskrivelse;
+}
+.create-activity-adresse {
+  width: 80%;
+
+  grid-area: adresse;
+}
+.create-activity-kart {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+  width: clamp(300px, 90%, 90%);
+  background-color: red;
+  grid-area: kart;
+}
+.create-activity-oprett {
+  margin-top: 20px;
+  height: 100px;
+  width: clamp(100px, 40%, 60%);
+  grid-area: opprett;
+}
+
+.create-activity-oprett input {
+  width: 100%;
+}
+.create-activity-oprett input:hover {
+  cursor: pointer;
+}
+
+.create-activity-ekstra {
+  height: 100px;
+  grid-area: Ekstra;
+}
+.create-activity-utsyr {
+  width: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  grid-area: Utstyr;
+}
+.create-activity-utsyr-text {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.create-activity-utsyr-divider {
+  height: 28px;
+  margin: 4px;
+}
+.create-activity-utsyr ul {
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.create-activity-tags ul {
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.create-activity-tags li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0.5rem;
+}
+
+.create-activity-utsyr li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0.5rem;
+}
+.create-activity-dato {
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 5px;
+  grid-area: Dato;
+  display: grid;
+  width: 77%;
+  grid-template-areas:
+    "startdisplay"
+    "enddisplay"
+    "datepicker";
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.2rem;
+  text-align: center;
+}
+.create-activity-dato-kalender {
+  grid-area: datepicker;
+  margin-bottom: 20px;
+}
+
+.create-activity-dato-start {
+  width: 100%;
+  grid-area: startdisplay;
+}
+.create-activity-dato-end {
+  width: 100%;
+  grid-area: enddisplay;
+}
+.create-activity-bilde {
+  margin: 40px auto;
+  background-color: white;
+  width: 77%;
+  border-radius: 5px;
+  height: 100px;
+  grid-area: Bilde;
+}
+.create-activity-tags {
+  width: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  grid-area: Tags;
+}
+.create-activity-tags-text {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.create-activity-deltakere {
+  width: 300px;
+  margin: 20px;
+  grid-area: Deltakere;
+  background-color: white;
+  border-radius: 5px;
+}
+.create-activity-deltakere-text {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.create-activity-dato input {
+  width: 120px;
+}
+.create-activity-dato p {
+  font-size: medium;
+}
+
+#wrapper-icon-selection {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#icon-select-infortext {
+  display: inline;
+  margin: 0 1em;
+  color: rgba(0, 0, 0, 1);
+  font-size: 0.9em;
+}
+
+#select {
+  margin: 0 1.3em;
+}
+
+.activityIcon {
+  height: 40px;
+  width: 40px;
+}
+
+#selected-activity-icon {
+  height: 55px;
+  width: 55px;
+}
+
+.create-activity-bilde {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#icon-label {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.65);
+}
+@media only screen and (max-width: 1024px) {
+  .extra-grid {
+    padding: 0;
+    margin: 0;
+    width: minmax(300px, 1024px);
+  }
+  .create-activity-oprett {
+    margin-top: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .create-activity-grid {
+    grid-template-areas:
+      "essentialsGrid "
+      "ExtraGrid";
+    grid-template-columns: minmax(300px, 1024px);
+  }
+  .create-activity-kart {
+    border-radius: 20px;
+    margin-top: 30px;
+    height: 300px;
+    width: clamp(300px, 90%, 90%);
+  }
+  .create-activity-base {
+    background-image: none;
+  }
+  .create-activity-dato {
+    margin: 20px 0;
+    width: 300px;
+  }
+  .create-activity-bilde {
+    margin: 20px 0;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .essentials-grid {
+    justify-items: center;
+    width: minmax(300px, 800px);
+    display: grid;
+    grid-area: essentialsGrid;
+    grid-template-areas:
+      "title"
+      "navn"
+      "beskrivelse"
+      "nivaa"
+      "adresse"
+      "kart "
+      "opprett ";
+    grid-template-columns: 1fr;
+  }
+  .extra-grid {
+  }
+  .create-activity-nivaa-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+}

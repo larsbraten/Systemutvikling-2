@@ -1,0 +1,13 @@
+.mapDiv {
+  margin: 0 auto;
+  width: 100% /*clamp(600px, 100%, 1200px + 2em)*/;
+  height: 70vh;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .mapDiv {
+    height: 50vh;
+    border-radius: 0;
+  }
+}

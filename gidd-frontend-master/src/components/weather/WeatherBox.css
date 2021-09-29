@@ -1,0 +1,35 @@
+.WeatherBox {
+
+}
+
+.WeatherBoxSmall {
+    position: relative;
+}
+
+.WeatherBoxSmall .temperature {
+    font-size: 1em;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+}
+
+.WeatherBoxSmall img {
+    width: 50px;
+    height: 50px;
+}
+
+.WeatherBoxNormal {
+    font-size: 1.4em;
+    position: relative;
+}
+
+.WeatherBoxNormal .temperature {
+    position: absolute;
+    top: 3px;
+    left: 65px;
+}
+
+.WeatherBoxNormal img {
+    width: 80px;
+    height: 80px;
+}

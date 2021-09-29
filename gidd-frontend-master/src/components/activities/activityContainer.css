@@ -1,0 +1,47 @@
+.activities-base {
+  display: grid;
+  grid-template-columns: 1fr minmax(100px, 1920px) 1fr;
+  grid-template-areas: ". activity-container .";
+  background-image: url(../../assets/Abstract2.svg);
+  background-size: cover;
+}
+.activity-view-container {
+  background-color: white;
+  grid-area: activity-container;
+  display: grid;
+  grid-template-areas:
+    "search-bar search-bar"
+    "activity-filter activity-list";
+  grid-template-columns: 1fr 10fr;
+  margin-bottom: 20px;
+  border-radius: 0 0 40px 40px;
+}
+
+.activitiesFlex {
+  display: flex;
+  flex-direction: row;
+}
+.activities-filter-container {
+  grid-area: activity-filter;
+}
+.activities-view-container {
+  grid-area: activity-list;
+  width: 100%;
+}
+.activities-search-bar {
+  grid-area: search-bar;
+}
+.activityViewGridDisplayDiv {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+@media only screen and (max-width: 1024px) {
+  .activity-view-container {
+    grid-template-areas:
+      "search-bar search-bar"
+      "activity-filter activity-filter"
+      "activity-list activity-list";
+    grid-template-columns: 1fr 1fr;
+  }
+}

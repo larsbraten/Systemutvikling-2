@@ -1,0 +1,71 @@
+.ActivityCard {
+  opacity: 0;
+  animation: fadeIn 0.5s;
+  animation-delay: calc(var(--order) * 50ms);
+  animation-fill-mode: forwards;
+  display: flex;
+  margin-bottom: 1em;
+  margin-right: 20px;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.activityCardDetails {
+  text-align: left;
+  margin: 1em;
+  display: flex;
+  height: clamp(1rem, 7rem, 15rem);
+  max-width: 25rem;
+  overflow: hidden;
+  gap: 2rem;
+}
+.activityCardDetails img {
+  width: 50px;
+}
+.activityCardMaps {
+  margin-left: auto;
+  margin-right: 40px;
+}
+.activityCardMaps img {
+  margin-left: 0 auto;
+  text-align: right;
+  width: 40px !important;
+  color: #4f4f4f;
+}
+.activityCardDate {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.cardLink {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .activityCardMaps img {
+    display: none;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2em !important;
+  }
+  h3 {
+    font-size: 2em !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .ActivityCard {
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .activityCardDetails img {
+    display: none;
+  }
+}

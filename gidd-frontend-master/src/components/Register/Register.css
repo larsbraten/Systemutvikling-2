@@ -1,0 +1,239 @@
+.Register {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.Register-link {
+  display: block;
+}
+
+.loginDiv {
+  text-align: center;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 2.5em;
+  color: #4f4f4f;
+}
+
+.Base {
+  background-image: url(./Abstract.svg);
+  height: 100vh;
+  overflow: auto;
+  background-size: cover;
+}
+
+.loginFormInput {
+}
+
+.loginFormRegister {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #4f4f4f;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+  height: 40px;
+  width: 70%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.loginFormRegister h3 {
+  margin: 7px !important;
+  height: 10px;
+  font-weight: 800;
+  padding: 0;
+}
+
+.RegistrationAuthenticationContainer {
+  margin: 50px auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-areas: "Login Register";
+  justify-content: center;
+  grid-template-columns: 1fr 2fr;
+  overflow: hidden;
+  height: fit-content;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 3px 15px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 3px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.RegistrationRegistrationContainer {
+  gap: 1rem;
+  text-align: center;
+  display: grid;
+  min-height: 800px;
+  grid-area: Register;
+  background-color: white;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+.RegistrationLoginContainer {
+  background-image: url(./Abstract2.svg);
+  display: grid;
+  grid-area: Login;
+  align-content: center;
+  justify-content: center;
+}
+
+.RegistrationLoginContainer h1 {
+  margin: 0 auto;
+  color: white;
+}
+.RegistrationLoginContainer h3 {
+  text-align: center;
+  color: white;
+}
+
+.LoginContainer h3 {
+  color: #009791;
+}
+
+.RegistrationLogoContainer {
+  margin: 2rem;
+  text-align: left;
+  max-height: 10px;
+  margin-top: -300px;
+}
+.LoginLogo {
+  height: 70px;
+}
+
+hr {
+  max-height: 10px;
+  width: 40%;
+  border: 1px, solid, #009791;
+}
+.LoginSocialLogos {
+  margin: 0 auto;
+  align-content: center;
+  display: flex;
+  gap: 2rem;
+}
+.Register-form-Container {
+  margin: 0 auto;
+
+  display: grid;
+  max-width: 40%;
+  gap: 2rem;
+}
+
+.Register-input {
+  height: 25px;
+  padding-left: 40px;
+  border: none;
+  border-bottom: 1px solid #009791;
+  outline: none;
+  color: #009791;
+}
+
+.Register-input:focus {
+  border-bottom: 1px solid #004240;
+  color: #000000;
+}
+
+.loginFormInputPassword {
+  background-color: white;
+  background-image: url(./vpn_key.svg);
+  background-position: 3px -5px;
+  background-repeat: no-repeat;
+}
+.loginFormInputEmail {
+  background-color: white;
+  background-image: url(./mail_outline.svg);
+  background-position: 3px -5px;
+  background-repeat: no-repeat;
+}
+.loginFormInputNames {
+  background-color: white;
+  background-image: url(./User.svg);
+  background-size: inherit;
+  background-position: 3px -1px;
+  background-repeat: no-repeat;
+}
+.loginFormButton {
+  height: 40px;
+  background-color: #4f4f4f;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+.UseYourOwn {
+  max-height: 100px;
+}
+.activity-level-registration {
+  display: flex;
+  margin: 0 20%;
+  gap: 10px;
+  justify-content: space-between;
+}
+.activity-level-registration div {
+  display: flex;
+  flex-direction: column;
+}
+.loginFormLogin-mobile {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #4f4f4f !important;
+  color: white !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+  height: 40px;
+  width: 70%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.loginFormLogin-mobile h3 {
+  color: white;
+  border-radius: 40px;
+  background-color: #4f4f4f;
+  height: 35px;
+  margin: 0 30%;
+  padding-top: 8px;
+  font-weight: 500;
+}
+.loginFormLogin-mobile h3:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .RegistrationAuthenticationContainer {
+    margin: 50px auto;
+    max-width: 1000px;
+    display: block;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 3px 15px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 3px 15px 0px rgba(0, 0, 0, 0.4);
+  }
+  .RegistrationLoginContainer {
+    display: none;
+  }
+  .AuthenticationContainer1 {
+    border-radius: 0px;
+    height: calc(100vh - 50px);
+  }
+  .Register-form-Container {
+    max-width: 100%;
+    margin: 0 20%;
+  }
+}

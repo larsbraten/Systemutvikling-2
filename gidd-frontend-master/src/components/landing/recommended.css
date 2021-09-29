@@ -1,0 +1,65 @@
+.RecommendedContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-template-rows: auto;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+.RecommendedCard {
+  align-self: center;
+  margin-bottom: 1em;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  height: clamp(1rem, 30rem, 30rem);
+  width: clamp(200px, 350px, 400px);
+}
+.RecommendedCardDetails {
+  text-align: left;
+  height: 4rem;
+  margin: 1em;
+  display: flex;
+  overflow: hidden;
+  gap: 2rem;
+}
+.RecommendedCardMaps {
+  background-color: red;
+  height: 12rem;
+}
+.RecommendedAvatar {
+  background-color: red;
+}
+.RecommendedWeatherContainer {
+  margin-left: auto;
+}
+.RecommendedHeart {
+  width: 2rem;
+  margin-left: auto;
+}
+.RecommendedCardDescription {
+  height: 7rem;
+  overflow: hidden;
+  margin: 1rem;
+  text-align: left;
+  display: flex;
+}
+
+.RecommendedCardButtons {
+  margin: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+.RecommendedCardButtonSignUp {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+.RecommendedCardButtonReadMore {
+  margin-left: auto;
+  margin-right: 3rem;
+}
+@media only screen and (max-width: 400px) {
+  .RecommendedCard {
+    width: 95%;
+  }
+}

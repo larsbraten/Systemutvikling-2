@@ -1,0 +1,250 @@
+.single-activity-base {
+  display: grid;
+  background-image: url(../../assets/Abstract2.svg);
+  background-size: cover;
+  grid-template-areas: ". landinggrid .";
+  grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+}
+
+.single-activity-grid {
+  grid-area: landinggrid;
+  padding: 40px;
+  background-color: white;
+  border-radius: 0 0 40px 40px;
+  display: grid;
+  max-width: 1200px;
+  gap: 10px;
+  grid-template-areas:
+    "title title title title"
+    "level master capacity date"
+    "members description equipment interests"
+    "join join cancel cancel"
+    "map map map map";
+  grid-template-rows: repeat(4, clamp(100px, 1fr, 600px));
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  gap: 2em;
+}
+.single-activity-title {
+  grid-area: title;
+}
+.single-activity-level {
+  grid-area: level;
+}
+.single-activity-master {
+  grid-area: master;
+}
+.single-activity-capacity {
+  grid-area: capacity;
+}
+.single-activity-date {
+  grid-area: date;
+}
+.single-activity-members {
+  overflow: hidden;
+  grid-area: members;
+}
+.single-activity-members ul {
+  padding: 0;
+  list-style-type: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+.single-activity-members li {
+  padding: 0;
+  margin: 5px;
+}
+.single-activity-description {
+  grid-area: description;
+  overflow: hidden;
+}
+.single-activity-equipment {
+  grid-area: equipment;
+}
+
+.single-activity-interests {
+  grid-area: interests;
+}
+
+.single-activity-join {
+  margin: 0 auto;
+  grid-area: join;
+}
+
+.single-activity-join button {
+  margin: 0 auto;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  border: none;
+  background-color: #4f4f4f;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 20px;
+  padding: 10px 30px;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.single-activity-join button:hover {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.5),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  background-color: #5a5a5a;
+}
+
+.single-activity-cancel button {
+  margin: 0 auto;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 20px;
+  padding: 10px 30px;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: white;
+  border: solid 2px #4f4f4f;
+  color: #4f4f4f;
+}
+.single-activity-cancel button:hover {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.5),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  background-color: #f1f1f1;
+}
+
+.single-activity-cancel {
+  grid-area: cancel;
+  margin: 0 auto;
+}
+.single-activity-map {
+  width: 100%;
+  grid-area: map;
+}
+.cardish {
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: solid 1px #dfdfdf;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+}
+.single-activity-grid h2 {
+  word-wrap: break-word;
+}
+.single-activity-grid {
+}
+
+.single-activity-oppdater {
+  margin-right: 40px !important;
+  margin-left: 20px;
+}
+
+.single-activity-angre {
+  margin: 0 auto;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  border: none;
+  background-color: #4f4f4f;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 20px;
+  padding: 10px 30px;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: white !important;
+  border: solid 2px #4f4f4f !important;
+  color: #4f4f4f !important;
+}
+.single-activity-angre:hover {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.5),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  background-color: #5a5a5a;
+}
+.single-activity-map-map {
+  height: 30vh;
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+}
+
+.chipEquipment {
+  margin-right: 200px;
+}
+.edit-activity-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.edit-activity-levels-div {
+  margin: 10px;
+  max-height: 200px;
+  width: 200px;
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+}
+.edit-activity-levels-div img {
+  max-width: 50px;
+}
+.edit-activity-man {
+  margin-right: 20px;
+  max-width: 40px !important;
+  max-height: 60px;
+}
+
+.single-activity-fulldescription {
+  height: 200px;
+}
+.interests-chip-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.interests-chip {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .single-activity-grid {
+    border-radius: 0px;
+    grid-template-areas:
+      "title title "
+      "level master"
+      "capacity date"
+      "members description "
+      "equipment interests"
+      "join cancel"
+      "map map";
+    grid-template-rows: repeat(2, clamp(100px, 1fr, 600px));
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 2em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .single-activity-grid {
+    grid-template-areas:
+      "title"
+      "level"
+      "master"
+      "capacity"
+      "date"
+      "members"
+      "description"
+      "equipment"
+      "interests"
+      "join"
+      "cancel"
+      "map";
+    grid-template-rows: repeat(1, clamp(100px, 1fr, 600px));
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    gap: 2em;
+  }
+}

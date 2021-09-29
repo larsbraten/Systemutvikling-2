@@ -1,0 +1,149 @@
+.calendar-grid-view {
+  background-image: url(../../assets/Abstract2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+  grid-template-areas: "activity calendar";
+  grid-template-columns: 1fr 400px;
+}
+.activity-calendar {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+  grid-area: calendar;
+  width: 350px;
+  height: 430px;
+  margin: 20px;
+}
+.calendar-activities {
+  padding: 20px;
+  max-height: 70vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+}
+
+.kalendar-activity-wrapper {
+  animation: fadeIn 0.5s;
+  animation-delay: calc(var(--order) * 50ms);
+  animation-fill-mode: forwards;
+  background-color: none !important;
+  position: relative;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.kalendar-time-entry-active {
+  background-color: none !important;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+.kalendar-time-entry-active button {
+  background-color: none !important;
+}
+
+.kalendar-time-entry-disabled {
+  background-color: none !important;
+  overflow: hidden;
+  transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+}
+.kalendar-time-entry-disabled:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 6px -3px rgb(0 0 0 / 20%),
+    0px 10px 14px 1px rgb(0 0 0 / 14%), 0px 4px 18px 3px rgb(0 0 0 / 12%);
+}
+
+.kalendar-activity-button {
+  background-color: rgba(255, 255, 255, 0.698) !important;
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: none;
+}
+.kalendar-activity-button:hover {
+  cursor: pointer;
+}
+
+.kalendar-activity-content-hidden {
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  transition: max-height 0.2s ease-out;
+}
+.kalendar-activity-content-visible {
+  display: block;
+  max-height: 100%;
+  overflow: visible;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  transition: max-height 0.5s ease-out;
+}
+
+.kalendar-activity-wrapper:hover .kalendar-activity-content {
+  display: block;
+}
+.kalendar-activity-wrapper hr {
+  border: 1px solid #cacaca;
+  margin: 10px 0;
+
+  width: 100%;
+}
+.chip-kalendar-button {
+  max-height: 30px;
+  overflow: hidden;
+}
+.chip-kalendar-button:hover {
+  cursor: pointer;
+}
+.chip-kalendar-hard {
+  background-color: #d94e4e !important;
+  color: white !important;
+}
+.chip-kalendar-medium {
+  background-color: #d9a160 !important;
+}
+.chip-kalendar-easy {
+  background-color: #4edce1 !important;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .calendar-grid-view {
+    padding: 0;
+    padding-top: 20px;
+    grid-template-areas:
+      "calendar"
+      "activity" !important;
+    grid-template-columns: 1fr !important;
+  }
+  .activity-calendar {
+    width: 350px;
+    height: 400px;
+    margin: 0px auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .activity-calendar {
+    padding: 0;
+    width: 320px;
+    height: 400px;
+    border-radius: 0;
+  }
+}
